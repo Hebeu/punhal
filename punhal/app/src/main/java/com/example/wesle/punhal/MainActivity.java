@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements HasFragmentInject
         String nooems = Hotel_Factory.provideInstance().getNome();
         hotel.setNome("GranHotel");
         hotel.setEstrelas(4);
+
         setContentView(R.layout.activity_main);
         getSupportFragmentManager().
                 beginTransaction().

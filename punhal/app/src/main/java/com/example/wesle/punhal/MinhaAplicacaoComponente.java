@@ -10,6 +10,6 @@ import dagger.android.AndroidInjector;
 //do componente. Embora façamos referência ao nosso ActivityModule para injetar atividades,
 //também fazemos referência ao AndroidInjectionModule, que é necessário para garantir a
 //vinculação dos tipos de base do Android (Atividades, Fragmentos, etc.).
-@Component(modules = {AndroidInjectionModule.class,MinhaAplicacaoModule.class})
+@Component(modules = {AndroidInjectionModule.class,MinhaAplicacaoModule.class, PerfilHotelFragmentModule.class})
 interface MinhaAplicacaoComponente extends AndroidInjector<MinhaAplicacao> {
 }

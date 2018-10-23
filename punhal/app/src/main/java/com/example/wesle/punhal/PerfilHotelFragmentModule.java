@@ -1,18 +1,10 @@
 package com.example.wesle.punhal;
 
-import android.app.Fragment;
-
-import dagger.Binds;
 import dagger.Module;
-import dagger.android.AndroidInjector;
-import dagger.android.support.FragmentKey;
-import dagger.multibindings.IntoMap;
+import dagger.android.ContributesAndroidInjector;
 
-@Module(subcomponents = PerfilHotelFragmentSubComponent.class)
+@Module
 public abstract class PerfilHotelFragmentModule {
-//    @Binds
-//    @IntoMap
-//    @FragmentKey(PerfilHotelFragment.class)
-//    abstract AndroidInjector.Factory<? extends Fragment>
-//     bindYourFragmentInjectorFactory(PerfilHotelFragmentSubComponent.Builder builder);
+    @ContributesAndroidInjector
+    abstract PerfilHotelFragment contributePerfilHotelFragmentInjector();
 }
